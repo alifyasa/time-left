@@ -18,11 +18,10 @@ onUnmounted(
 <template>
     <BlurredBackground :now="now">
         <div class="min-h-screen flex flex-col">
-            <div class="my-auto text-center font-mono">
-                <p class="text-5xl font-medium leading-snug mb-2">
-                    <BaseTimeLeft :now="now" />
-                </p>
-                <p class="text-3xl">left today</p>
+            <div
+                class="m-auto font-mono flex flex-col w-fit p-24 backdrop-blur rounded-2xl border border-white border-opacity-20 shadow-xl">
+                <BaseTimeLeft :now="now" />
+                <p class="text-3xl w-fit mx-auto">left today</p>
             </div>
         </div>
     </BlurredBackground>

@@ -1,5 +1,7 @@
 <template>
-    {{ timeLeftDay }}
+    <p class="text-5xl font-medium leading-snug mb-2 w-fit mx-auto">
+        {{ timeLeftDay }}
+    </p>
 </template>
 
 <script setup lang="ts">

@@ -1,8 +1,6 @@
 <template>
-    <div :style="bg_image">
-        <div :class="`backdrop-blur-lg ${CURRENT_THEME.text_color}`">
-            <slot></slot>
-        </div>
+    <div :style="bg_image" :class="CURRENT_THEME.text_color">
+        <slot></slot>
     </div>
 </template>
 
