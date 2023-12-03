@@ -1,7 +1,13 @@
 <template>
     <p class="text-5xl font-medium leading-snug mb-2 w-fit mx-auto">
-        {{ timeLeftDay }}
+        <span v-if="timeLeftDay">
+            {{ timeLeftDay }}
+        </span>
+        <span v-else>
+            No Time
+        </span>
     </p>
+    <p class="text-3xl w-fit mx-auto">left today</p>
 </template>
 
 <script setup lang="ts">
