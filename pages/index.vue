@@ -24,4 +24,7 @@ onUnmounted(
             </div>
         </div>
     </BaseBackground>
+    <UnsplashCredit>
+        Photo by Foo from Bar
+    </UnsplashCredit>
 </template>

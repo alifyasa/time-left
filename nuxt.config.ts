@@ -13,7 +13,7 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      'Chivo+Mono': [400, 500]
+      'Chivo+Mono': [300, 400, 500]
     }
   }
 })
