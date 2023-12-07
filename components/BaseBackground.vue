@@ -25,11 +25,11 @@ const ALL_THEME: {
 } = {
     SUNRISE: {
         background: sunrise,
-        text_color: 'text-black'
+        text_color: 'text-white'
     },
     NOON: {
         background: noon,
-        text_color: 'text-black'
+        text_color: 'text-white'
     },
     SUNSET: {
         background: sunset,
@@ -61,4 +61,6 @@ const bg_image = computed(() => ({
     backgroundImage: `url(${CURRENT_THEME.value.background})`,
     backgroundSize: 'cover'
 }))
+
+provide('bgTheme', CURRENT_THEME)
 </script>
