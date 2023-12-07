@@ -1,5 +1,5 @@
 <template>
-    <p class="text-5xl font-medium leading-snug mb-2 w-fit mx-auto">
+    <p class="text-5xl font-medium leading-snug mb-2 w-fit mx-auto drop-shadow-[0_2px_2px_rgba(0,0,0,0.9)] shadow-black">
         <span v-if="timeLeftDay">
             {{ timeLeftDay }}
         </span>
@@ -7,7 +7,7 @@
             No Time
         </span>
     </p>
-    <p class="text-3xl w-fit mx-auto">left today</p>
+    <p class="text-3xl w-fit mx-auto drop-shadow-[0_2px_2px_rgba(0,0,0,0.9)]">left today</p>
 </template>
 
 <script setup lang="ts">
