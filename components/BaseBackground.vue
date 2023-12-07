@@ -62,5 +62,5 @@ const bg_image = computed(() => ({
     backgroundSize: 'cover'
 }))
 
-provide('bgTheme', CURRENT_THEME)
+provide("bgTheme", CURRENT_THEME)
 </script>
