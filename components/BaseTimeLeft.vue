@@ -1,7 +1,7 @@
 <template>
     <p class="text-5xl font-medium leading-snug mb-2 w-fit mx-auto drop-shadow-[0_2px_2px_rgba(0,0,0,0.9)] shadow-black">
-        <span v-if="timeLeftDay">
-            {{ timeLeftDay }}
+        <span v-if="timeLeftDay" v-for="char, idx in timeLeftDay" :key="idx">
+            {{ char }}
         </span>
         <span v-else>
             No Time

@@ -5,13 +5,11 @@ const now = ref(new Date())
 let nowInterval: NodeJS.Timeout
 onMounted(() => {
     nowInterval = setInterval(() => {
-        // console.log("NOW Tick")
         now.value = new Date()
     }, 1000)
 })
 onUnmounted(
     () => {
-        // console.log("Clear Interval")
         clearInterval(nowInterval)
     }
 )
